@@ -20,7 +20,7 @@
     
     function startWatch(){
         
-        var options ={frequency: 3000};
+        var options = {frequency: 3000};
         watchID = navigator.accelerometer.watchAcceleration(onSuccess,onError,options);
     }
     
@@ -33,7 +33,7 @@
     }
     
     function onSuccess(acceleration){
-        var element = document.getElementById('Accelerometer');
+        var element = document.getElementById('accelerometer')
         element.innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' + 
                             'Acceleration Y: ' + acceleration.y + '<br />' +
                             'Acceleration Z: ' + acceleration.Z + '<br />' +
@@ -47,6 +47,6 @@
     </script>
   </head>
   <body>
-      <div id="Accelerometer"> Waiting for accelerometer...</div> 
+      <div id="accelerometer"> Waiting for accelerometer...</div> 
   </body>
 </html>
